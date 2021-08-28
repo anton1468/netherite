@@ -189,6 +189,15 @@ header {
     p {
       display: none !important;
     }
+    .header-value {
+      display: flex;
+      margin-top: 10px;
+      gap: 5px;
+      img {
+        width: 80px;
+        height: 32px;
+      }
+    }
   }
   .nav-menu {
     height: 24px;
