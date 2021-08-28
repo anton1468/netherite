@@ -1,0 +1,232 @@
+body {
+  background-image: url(./img/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+
+  .header-home {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    img {
+      width: 50px;
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+  }
+}
+.tab {
+  display: none;
+}
+.tab.is_active {
+  display: block;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  height: 90px;
+  background-color: rgba(22, 21, 31, 0.37);
+  .header-value {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+    img {
+      width: 150px;
+      height: 60px;
+    }
+  }
+  .header-back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .header-back-p {
+      color: white;
+      text-transform: uppercase;
+      font-family: Leksa Sans;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+    }
+  }
+}
+.card {
+  height: 275px;
+  width: 202px;
+  border: 1px solid black;
+
+  background-color: linear-gradient(
+    180deg,
+    rgba(68, 67, 92, 0) 29.69%,
+    rgba(36, 35, 51, 0) 57.29%,
+    #242333 100%
+  );
+  border-radius: 0px 0px 19px 15px;
+}
+.nav-menu {
+  display: flex;
+  max-width: 980px;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 57px;
+  .nav-menu-item {
+    height: 54px;
+    width: 188px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(33, 32, 49, 1);
+    border-bottom: none;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    &:hover {
+      border-top: 2px solid #f52cbf;
+    }
+  }
+}
+.container-m {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.cards-container {
+  h2 {
+    color: white;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  background-color: rgba(36, 35, 51, 1);
+  border-radius: 20px;
+  text-align: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  .card-crystals {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    button {
+      display: flex;
+      border-style: none;
+      border-radius: 30px;
+      border: 2px solid;
+      border-color: rgba(104, 47, 189, 1);
+      width: 150px;
+      height: 47px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 50px;
+      left: 33px;
+      background: linear-gradient(
+        45deg,
+        rgba(36, 35, 51, 1),
+        rgba(60, 59, 83, 1)
+      );
+      justify-content: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      align-items: center;
+      color: white;
+      img {
+        width: 7px;
+      }
+      .card-coin-btn-img {
+        width: 15px;
+      }
+    }
+    img {
+      width: 217px;
+      margin: 0 auto;
+    }
+  }
+}
+.tab_txt {
+  cursor: pointer;
+}
+.tab_active {
+  border-bottom: 1px solid #ff7c46 !important;
+}
+@media screen and (max-width: 1020px) {
+  .container-m {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-m {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    height: 50px !important;
+    p {
+      display: none !important;
+    }
+  }
+  .nav-menu {
+    height: 24px;
+  }
+  .nav-menu-item {
+    height: 34px !important;
+    width: 188px;
+    border-radius: 0px !important;
+    color: white;
+    font-size: 10px !important;
+
+    transition: all 0.3s ease;
+    margin-bottom: 40px !important;
+    margin-top: 0px !important;
+    &:hover {
+      border-top: 2px solid #f52cbf;
+    }
+  }
+  .cards-container {
+    margin-top: 20px !important;
+  }
+  .card-crystals {
+    img {
+      width: 124px !important;
+      height: 171px;
+    }
+    button {
+      width: 90px !important;
+      height: 30px !important;
+      font-size: 10px;
+      bottom: 30px !important;
+      left: 15px !important;
+      line-height: 5px;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      img {
+        width: 5px !important;
+      }
+    }
+  }
+}
