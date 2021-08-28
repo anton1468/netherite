@@ -157,6 +157,13 @@ header {
     height: 50px !important; }
     header p {
       display: none !important; }
+    header .header-value {
+      display: flex;
+      margin-top: 10px;
+      gap: 5px; }
+      header .header-value img {
+        width: 80px;
+        height: 32px; }
   .nav-menu {
     height: 24px; }
   .nav-menu-item {
